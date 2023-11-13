@@ -21,7 +21,7 @@ locals {
                 advanced_vpn_settings = {
                   enable_bgp                       = null
                   active_active                    = null
-                  private_ip_address_allocation    = ""
+                  private_ip_address_allocation    = "eastus"
                   default_local_network_gateway_id = ""
                   vpn_client_configuration         = []
                   bgp_settings                     = []
