@@ -56,7 +56,7 @@ locals {
           enabled = false
           config = {
             address_space                = ["10.132.0.0/16", ]
-            location                     = "eastus"
+            location                     = "southindia"
             link_to_ddos_protection_plan = false
             dns_servers                  = []
             bgp_community                = ""
@@ -106,7 +106,7 @@ locals {
       ddos_protection_plan = {
         enabled = false
         config = {
-          location = "eastus"
+          location = "southindia"
         }
       }
       dns = {
@@ -182,7 +182,7 @@ locals {
           }
           private_link_locations = [
             "eastus",
-            "south india",
+            "southindia",
           ]
           public_dns_zones                                       = []
           private_dns_zones                                      = []
