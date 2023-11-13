@@ -53,7 +53,7 @@ locals {
           }
         },
         {
-          enabled = true
+          enabled = false
           config = {
             address_space                = ["10.132.0.0/16", ]
             location                     = "eastus"
@@ -104,7 +104,7 @@ locals {
       ]
       vwan_hub_networks = []
       ddos_protection_plan = {
-        enabled = true
+        enabled = false
         config = {
           location = "eastus"
         }
@@ -187,7 +187,7 @@ locals {
           public_dns_zones                                       = []
           private_dns_zones                                      = []
           enable_private_dns_zone_virtual_network_link_on_hubs   = true
-          enable_private_dns_zone_virtual_network_link_on_spokes = true
+          enable_private_dns_zone_virtual_network_link_on_spokes = false
           virtual_network_resource_ids_to_link                   = []
         }
       }
