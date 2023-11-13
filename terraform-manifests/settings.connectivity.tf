@@ -182,7 +182,7 @@ locals {
           }
           private_link_locations = [
             "eastus",
-            "eastus",
+            "south india",
           ]
           public_dns_zones                                       = []
           private_dns_zones                                      = []
