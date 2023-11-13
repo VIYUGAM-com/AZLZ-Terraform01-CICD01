@@ -181,8 +181,8 @@ locals {
 
           }
           private_link_locations = [
-            "northeurope",
-            "westeurope",
+            "eastus",
+            "westus",
           ]
           public_dns_zones                                       = []
           private_dns_zones                                      = []
