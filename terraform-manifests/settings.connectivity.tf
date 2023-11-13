@@ -13,7 +13,7 @@ locals {
             bgp_community                = ""
             subnets                      = []
             virtual_network_gateway = {
-              enabled = false
+              enabled = true
               config = {
                 address_prefix           = "10.100.1.0/24"
                 gateway_sku_expressroute = "ErGw2AZ"
@@ -30,7 +30,7 @@ locals {
               }
             }
             azure_firewall = {
-              enabled = false
+              enabled = true
               config = {
                 address_prefix                = "10.100.0.0/24"
                 enable_dns_proxy              = true
@@ -48,7 +48,7 @@ locals {
               }
             }
             spoke_virtual_network_resource_ids      = []
-            enable_outbound_virtual_network_peering = true
+            enable_outbound_virtual_network_peering = false
             enable_hub_network_mesh_peering         = false
           }
         },
@@ -82,7 +82,7 @@ locals {
               enabled = false
               config = {
                 address_prefix                = ""
-                enable_dns_proxy              = true
+                enable_dns_proxy              = false
                 dns_servers                   = []
                 sku_tier                      = ""
                 base_policy_id                = ""
@@ -97,7 +97,7 @@ locals {
               }
             }
             spoke_virtual_network_resource_ids      = []
-            enable_outbound_virtual_network_peering = true
+            enable_outbound_virtual_network_peering = false
             enable_hub_network_mesh_peering         = false
           }
         },
